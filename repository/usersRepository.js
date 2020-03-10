@@ -3,7 +3,7 @@ module.exports = db => {
     getAllUsers: () => {
       console.log('inside the repo')
       const qs = `SELECT * FROM users;`;
-      db.query(qs);
+      return db.query(qs);
     }
   };
 };
